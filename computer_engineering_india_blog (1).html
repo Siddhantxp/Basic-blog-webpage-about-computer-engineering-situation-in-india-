@@ -1,0 +1,216 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Computer Engineering in India — Blog</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="data:,"><!-- empty favicon to avoid 404 -->
+</head>
+<body>
+  <header class="site-header bordered-header">
+    <div class="container">
+      <a class="logo" href="index.html">💻 CE India Blog</a>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container main-grid">
+    <section class="posts">
+      <h1 class="section-title">Recent Posts</h1>
+
+      <article class="post bordered-card">
+        <h2 class="post-title">Engineering Education and the Skill Gap</h2>
+        <p class="post-meta">October 18, 2025 — By Editorial Team</p>
+        <p>
+          India graduates hundreds of thousands of engineering students every year, yet employers frequently report a mismatch between the skills students possess and the practical abilities demanded by industry. This gap stems from multiple factors: curricula that prioritize theory over hands-on practice, limited access to modern lab equipment in many colleges, and an emphasis on rote learning rather than conceptual problem solving. To bridge this divide, colleges and industry must strengthen collaboration through internships, project-driven coursework, and updated syllabi that include emerging topics like cloud computing, machine learning fundamentals, and secure coding practices. Equally important are soft skills — communication, teamwork, and design thinking — which are often underemphasized but critical for successful careers.
+        </p>
+        <a class="read-more" href="post-sample.html">Read full post →</a>
+      </article>
+
+      <article class="post bordered-card">
+        <h2 class="post-title">Placements: Expectations vs Reality</h2>
+        <p class="post-meta">September 30, 2025 — By Campus Watch</p>
+        <p>
+          Campus placement season remains a high-pressure period for both students and institutions. Many students enter placement drives with the expectation that top companies will hire a large portion of the batch. However, reality is more nuanced: high-demand roles are limited and often require a mix of specialized technical knowledge, problem-solving speed, and project experience. Smaller startups and product-first companies may offer the best learning environments but sometimes lack structured hiring pipelines that campus placements provide. Students should therefore diversify their preparation — contribute to open-source, build real projects, participate in hackathons, and learn to present their work effectively. Additionally, placement offices can better prepare students by inviting alumni for mock interviews, organizing skill workshops, and fostering industry partnerships that offer long-term mentorship.
+        </p>
+        <a class="read-more" href="#">Read full post →</a>
+      </article>
+
+      <article class="post bordered-card">
+        <h2 class="post-title">Infrastructure Challenges: Labs, Internet, and Equity</h2>
+        <p class="post-meta">August 12, 2025 — By Policy Lens</p>
+        <p>
+          While a handful of premier institutions enjoy state-of-the-art labs and reliable connectivity, many colleges across smaller towns face infrastructural hurdles. Slow or unreliable internet, inadequate computing facilities, and limited budgets for lab maintenance all hamper the student experience. These deficiencies disproportionately affect students from lower-income backgrounds who cannot access private resources. Addressing infrastructure gaps requires targeted funding, transparent maintenance policies, and shared lab facilities that regional colleges can co-manage. Government initiatives and industry CSR programs can meaningfully support improvements, but success demands sustained engagement and accountability rather than short-term hardware donations.
+        </p>
+        <a class="read-more" href="#">Read full post →</a>
+      </article>
+
+    </section>
+
+    <aside class="sidebar bordered-card">
+      <div class="widget card">
+        <h3 class="widget-title">About this blog</h3>
+        <p>
+          A blog dedicated to discussing the real situations faced by computer engineering students, faculty, and professionals in India. We cover education, placements, infrastructure, industry trends, and student stories — with a balanced, empathetic perspective.
+        </p>
+      </div>
+
+      <div class="widget card">
+        <h3 class="widget-title">Popular tags</h3>
+        <div class="tags">
+          <a>Education</a>
+          <a>Placements</a>
+          <a>Policy</a>
+          <a>Projects</a>
+          <a>Campus Life</a>
+        </div>
+      </div>
+
+      <div class="widget card">
+        <h3 class="widget-title">Subscribe</h3>
+        <p>Get new posts by email (sample demo only)</p>
+        <form class="subscribe-form" onsubmit="event.preventDefault(); alert('Demo: subscribe feature not configured.');">
+          <input type="email" placeholder="your@email.com" required>
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+    </aside>
+  </main>
+
+  <footer class="site-footer bordered-header">
+    <div class="container">
+      <p>Made with ❤️ — focused on computer engineering life in India.</p>
+      <p class="small">License: CC BY-NC-SA 4.0</p>
+      <p class="watermark">By <a href="https://github.com/siddhantxp" target="_blank" style="color:var(--purple-2);text-decoration:none;">siddhantxp</a> on GitHub</p>
+    </div>
+  </footer>
+
+</body>
+</html>
+
+--- styles.css ---
+:root{
+  --purple:#6A0DAD;
+  --purple-2:#8E44FF;
+  --white:#FFFFFF;
+  --black:#000000;
+  --muted:#f4f2f8;
+  --border-color:#d2b7ff;
+}
+
+*{box-sizing:border-box}
+body{font-family:Inter, system-ui, -apple-system, Roboto, 'Segoe UI', Arial; background:var(--muted); color:var(--black); margin:0}
+.container{max-width:1100px;margin:0 auto;padding:24px}
+
+/* Header */
+.site-header{background:linear-gradient(90deg,var(--purple),var(--purple-2)); color:var(--white); border-bottom:4px solid var(--border-color);}
+.bordered-header{border-top:4px solid var(--border-color)}
+.logo{font-weight:700;font-size:1.3rem;color:var(--white);text-decoration:none}
+.nav a{color:var(--white);margin-left:20px;text-decoration:none;font-weight:600}
+
+/* Titles */
+.section-title{color:var(--purple);border-bottom:2px solid var(--border-color);padding-bottom:6px;margin-bottom:16px;font-size:1.5rem}
+.widget-title{color:var(--purple-2);border-bottom:2px solid var(--border-color);padding-bottom:4px;margin-bottom:12px;font-weight:700}
+
+/* Layout */
+.main-grid{display:grid;grid-template-columns:2fr 1fr;gap:28px;padding-top:28px}
+
+.bordered-card{border:2px solid var(--border-color);border-radius:12px;background:var(--white);box-shadow:0 4px 14px rgba(106,13,173,0.1)}
+.post{padding:20px;margin-bottom:20px}
+.post-title{color:var(--purple);margin:0 0 6px}
+.post-meta{color:#6b6b6b;font-size:0.9rem;margin-bottom:12px}
+.post p{line-height:1.7;color:#222}
+.read-more{display:inline-block;margin-top:10px;text-decoration:none;color:var(--purple-2);font-weight:700}
+
+.sidebar .card{padding:18px;margin-bottom:18px}
+.tags a{display:inline-block;margin:6px 6px 0 0;padding:6px 10px;border-radius:999px;background:linear-gradient(90deg,var(--purple),var(--purple-2));color:var(--white);font-size:0.85rem;text-decoration:none}
+
+.subscribe-form{display:flex;gap:8px;margin-top:10px}
+.subscribe-form input{flex:1;padding:10px;border-radius:8px;border:1px solid #ddd}
+.subscribe-form button{padding:10px 14px;border-radius:8px;border:0;background:var(--purple);color:var(--white);font-weight:700}
+
+.site-footer{padding:30px 0;background:#0b0710;color:#ddd;text-align:center;border-top:4px solid var(--border-color)}
+.small{opacity:0.8;font-size:0.85rem}
+.watermark{margin-top:6px;font-size:0.9rem;opacity:0.9}
+
+@media (max-width:800px){
+  .main-grid{grid-template-columns:1fr}
+  .nav{display:none}
+  .container{padding:16px}
+}
+
+--- about.html ---
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>About — CE India Blog</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header bordered-header">
+    <div class="container">
+      <a class="logo" href="index.html">💻 CE India Blog</a>
+    </div>
+  </header>
+  <main class="container bordered-card">
+    <article class="post">
+      <h1 class="section-title">About this blog</h1>
+      <p>
+        This site is dedicated to exploring the many layers of computer engineering education and practice in India. From student life and placement realities to policy-level infrastructure issues and success stories, our aim is to provide thoughtful, well-researched posts that spark conversation. We believe in accurate reporting, constructive critique, and practical suggestions that students, faculty, and industry stakeholders can act upon.
+      </p>
+      <p>
+        Contributors include students, faculty, and early-career engineers who write from first-hand experience. If you'd like to contribute, email us at <strong>editor@ceindiablog.example</strong> (demo address). We welcome interview proposals, first-person essays, and evidence-backed opinion pieces.
+      </p>
+    </article>
+  </main>
+  <footer class="site-footer bordered-header">
+    <div class="container">
+      <p>Back to <a href="index.html" style="color:var(--purple-2)">Home</a></p>
+      <p class="watermark">By <a href="https://github.com/siddhantxp" target="_blank" style="color:var(--purple-2);text-decoration:none;">siddhantxp</a> on GitHub</p>
+    </div>
+  </footer>
+</body>
+</html>
+
+--- post-sample.html ---
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Sample Post — CE India Blog</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header bordered-header">
+    <div class="container">
+      <a class="logo" href="index.html">💻 CE India Blog</a>
+    </div>
+  </header>
+  <main class="container bordered-card">
+    <article class="post">
+      <h1 class="section-title">Deep Dive: Curriculum Reform That Could Work</h1>
+      <p class="post-meta">July 14, 2025 — By Curriculum Watch</p>
+      <p>
+        Any meaningful reform must begin with clear learning outcomes: what should a graduating computer engineer be able to do in the first year of their professional life? More universities are experimenting with "capstone-first" models where students undertake practical, multi-disciplinary projects early in their degree. These projects force integration of theory and practice, requiring students to manage scope, use version control, work in teams, and present their work to an audience. Beyond projects, a modular curriculum with elective pathways helps students focus on specific strengths — whether embedded systems, data science, or cybersecurity — and gives institutions flexibility to update modules without overhauling the entire degree structure.
+      </p>
+      <p>
+        Faculty development is another pillar: teachers must have access to continuous learning to teach contemporary subjects effectively. Pedagogy workshops, sabbaticals in industry, and co-teaching models with industry experts can bring fresh perspectives into the classroom. Finally, assessment must reward creative thinking and design rather than only correctness on paper; project rubrics, peer review, and open-ended assignments can help achieve that aim.
+      </p>
+    </article>
+  </main>
+  <footer class="site-footer bordered-header">
+    <div class="container">
+      <p><a href="index.html" style="color:var(--purple-2)">Back to Home</a></p>
+      <p class="watermark">By <a href="https://github.com/siddhantxp" target="_blank" style="color:var(--purple-2);text-decoration:none;">siddhantxp</a> on GitHub</p>
+    </div>
+  </footer>
+</body>
+</html>
